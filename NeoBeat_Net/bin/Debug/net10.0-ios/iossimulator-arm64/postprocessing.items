@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="NeoBeat_Net.app/NeoBeat_Net">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>NeoBeat_Net.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>NeoBeat_Net.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/obj/Debug/net10.0-ios/iossimulator-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>NeoBeat_Net.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Songs"
+             xmlns:songview="clr-namespace:NeoBeat_Net.Views.SongView"
+             xmlns:model="clr-namespace:NeoBeat_Net.Models.Song"
+             x:Class="NeoBeat_Net.Pages.PostLog.Songs.SongsPage"
+             x:DataType="vm:SongPageViewModel">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="75, Auto"
+              ColumnSpacing="15"
+              Margin="15,0">
+            <Image Grid.Column="0"
+                   Source="logolight.png"
+                   HeightRequest="75"
+                   WidthRequest="75"
+                   HorizontalOptions="Start"/>
+            <Label Grid.Column="1"
+                   Text="{Binding Playlist.Name}"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   FontFamily="UbuntuBold"
+                   TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"/>
+        </Grid>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
+                HeightRequest="6" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start" 
+                Stroke="Transparent"
+                StrokeShape="15"
+                Margin="15,0,15,0"/>
+        
+        <CollectionView Margin="15"
+                        ItemsSource="{Binding Playlist.Songs}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Song">
+                    
+                    <songview:SongView SongImage="{Binding SongImage}"
+                                       SongName="{Binding Name}"
+                                       SongDuration="{Binding Duration}">
+                        <songview:SongView.GestureRecognizers>
+                            <TapGestureRecognizer/>
+                        </songview:SongView.GestureRecognizers>
+                    </songview:SongView>
+                    
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

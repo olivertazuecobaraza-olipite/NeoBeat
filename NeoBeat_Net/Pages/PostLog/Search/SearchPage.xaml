@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Search"
+             xmlns:ur="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:mi="http://www.aathifmahir.com/dotnet/2022/maui/icons"
+             xmlns:model="clr-namespace:NeoBeat_Net.Models.PlayList"
+             xmlns:plBigView="clr-namespace:NeoBeat_Net.Views.PlayListView"
+             x:Class="NeoBeat_Net.Pages.PostLog.Search.SearchPage"
+             x:DataType="vm:SearchPageViewModel">
+    
+    <VerticalStackLayout Margin="30, 50, 30, 30" 
+                         Spacing="10">
+            
+            <Image Source="logolight.png"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   HorizontalOptions="Center"
+                   Margin="0, 25, 0, 25" />
+
+            <VerticalStackLayout Spacing="15">
+                <Border BackgroundColor="{StaticResource LightSep}" 
+                        
+                        HeightRequest="6" 
+                        WidthRequest="60" 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Start" 
+                        Stroke="Transparent"
+                        StrokeShape="15"
+                        Margin="0,0,0,0"/>
+                
+                <Label Text="Search Songs"
+                       FontSize="52"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                       Margin="0, 0, 0, 5" />
+            </VerticalStackLayout>
+        
+            <ur:TextField Title="Song..."
+                          Icon="{mi:Material Search}"/>
+            
+            <VerticalStackLayout Margin="0,15,0,0" 
+                                 Spacing="10"
+                                 HeightRequest="140">
+                <Label Text="Recommended" 
+                       FontSize="18" 
+                       FontFamily="UbuntuBold"/>
+                
+                
+                <CollectionView ItemsSource="{Binding Recommended}">
+                    
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"
+                                           ItemSpacing="5"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:PlayList">
+                            <plBigView:PlayListBigView ImagePlayList="{Binding PlayListImage}">
+                                <plBigView:PlayListBigView.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding 
+                                                            Source={RelativeSource AncestorType={x:Type vm:SearchPageViewModel}}, 
+                                                            Path=TapPlaylistCommand}"/>
+                                </plBigView:PlayListBigView.GestureRecognizers>
+                            </plBigView:PlayListBigView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+            <VerticalStackLayout Margin="0,15,0,0" 
+                                 Spacing="10"
+                                 HeightRequest="140">
+                <Label Text="Genres" 
+                       FontSize="18" 
+                       FontFamily="UbuntuBold"/>
+                
+                <CollectionView ItemsSource="{Binding Genres}">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"
+                                           ItemSpacing="5"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:PlayList">
+                            <plBigView:PlayListBigView ImagePlayList="{Binding PlayListImage}">
+                                <plBigView:PlayListBigView.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding 
+                                                            Source={RelativeSource AncestorType={x:Type vm:SearchPageViewModel}}, 
+                                                            Path=TapPlaylistCommand}"/>
+                                </plBigView:PlayListBigView.GestureRecognizers>
+                            </plBigView:PlayListBigView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

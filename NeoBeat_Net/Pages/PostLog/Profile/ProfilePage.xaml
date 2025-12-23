@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Profile"
+             xmlns:sView="clr-namespace:NeoBeat_Net.Views.SongView"
+             xmlns:plview="clr-namespace:NeoBeat_Net.Views.PlayListView"
+             x:Class="NeoBeat_Net.Pages.PostLog.Profile.ProfilePage"
+             x:DataType="vm:ProfilePageViewModel">
+    <VerticalStackLayout Margin="30,15,30,30" 
+                             Spacing="20">
+            
+        <Grid ColumnDefinitions="*, *">
+            <Border Grid.Column="0"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    StrokeShape="100"
+                    Margin="0,20,0,0">
+                <Image Source=".png"
+                       HorizontalOptions="Center"
+                       Margin="0, 25, 0, 40" />
+            </Border>
+            <VerticalStackLayout Grid.Column="1" 
+                                 Spacing="5"
+                                 Margin="0,20,0,0">
+                <Label Text="Nombre"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               FontFamily="UbuntuBold"
+                               TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"/>   
+                <Label Text="1234"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       TextColor="OrangeRed"/>
+                <Button Text="Follow"
+                        Margin="0,15,15,15"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        FontFamily="UbuntuBold"/>
+            </VerticalStackLayout>
+        </Grid>
+            
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                HeightRequest="6" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start" 
+                Stroke="Transparent"
+                StrokeShape="15"/>
+            
+        <VerticalStackLayout Spacing="10">
+                
+            <Label Text="Favourite"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   FontFamily="UbuntuBold"
+                   TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                   Margin="0, 0, 0, 5" />
+                
+            <sView:SongBigView SongImage="{Binding Song.SongImage}"
+                                  SongName="{Binding Song.Name}"
+                                  SongArtisticName="{Binding Song.Artist.Name}">
+                <sView:SongBigView.GestureRecognizers>
+                    <TapGestureRecognizer/>
+                </sView:SongBigView.GestureRecognizers>
+            </sView:SongBigView>
+        </VerticalStackLayout>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
+                HeightRequest="6" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start" 
+                Stroke="Transparent"
+                StrokeShape="15"/>
+        <VerticalStackLayout Spacing="10">
+            <Label Text="PlayList" 
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   FontFamily="UbuntuBold"
+                   TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                   Margin="0, 0, 0, 5" />
+            
+            <Grid ColumnDefinitions="*, Auto" 
+                  ColumnSpacing="5">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding 
+                                    Source={RelativeSource AncestorType={x:Type vm:ProfilePageViewModel}}, 
+                                    Path=TapPlaylistCommand}"/>
+                </Grid.GestureRecognizers>
+                <Border Grid.Column="0" 
+                        StrokeShape="10" 
+                        WidthRequest="125" 
+                        HeightRequest="125" 
+                        HorizontalOptions="Start">
+                    <Image Source="{Binding PlayList.PlayListImage}"/>
+                </Border>
+                    
+                <VerticalStackLayout Grid.Column="1"
+                                     Margin="0,10">
+                        
+                        
+                    <Label Text="{Binding PlayList.Name}"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           FontFamily="UbuntuBold"
+                           TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                           HorizontalOptions="End"/>
+                    <Label Text="{Binding PlayList.Size}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           FontFamily="UbuntuBold"
+                           TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                           HorizontalOptions="End"/>
+                </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </VerticalStackLayout>  
+</ContentPage>

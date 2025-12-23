@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="NeoBeat_Net" mvid="3b201fa2c8d04a8d878fd062926ae6c6">
+  <java-to-managed>
+    <entry java-name="crc6488b7ae112137cc36/MainActivity" managed-name="NeoBeat_Net.MainActivity, NeoBeat_Net" managed-type-token-id="33554451" />
+    <entry java-name="crc6488b7ae112137cc36/MainApplication" managed-name="NeoBeat_Net.MainApplication, NeoBeat_Net" managed-type-token-id="33554452" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc6488b7ae112137cc36/MainActivity" managed-name="NeoBeat_Net.MainActivity, NeoBeat_Net" managed-type-token-id="33554451" />
+    <entry java-name="crc6488b7ae112137cc36/MainApplication" managed-name="NeoBeat_Net.MainApplication, NeoBeat_Net" managed-type-token-id="33554452" />
+  </managed-to-java>
+</api>

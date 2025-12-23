@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeoBeat_Net.Views.SongView.SongView">
+    <StackLayout>
+        <HorizontalStackLayout Spacing="15">
+            <Border HorizontalOptions="Start"
+                    StrokeShape="10"
+                    HeightRequest="50"
+                    WidthRequest="50">
+                <Image Source="{Binding SongImage}"/>
+            </Border>
+            <VerticalStackLayout Margin="0,5">
+                <Label Text="{Binding Name}"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"/>
+                <Label Text="{Binding Duration}"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       TextColor="DarkSlateGray"/>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}" 
+                HeightRequest="2" 
+                WidthRequest="500"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                Stroke="Transparent"
+                StrokeShape="15"
+                Margin="2,2"/>
+    </StackLayout>
+</ContentView>

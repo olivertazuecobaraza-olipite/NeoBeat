@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.PlayList"
+             xmlns:mi="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
+             xmlns:model="clr-namespace:NeoBeat_Net.Models.PlayList"
+             xmlns:plview="clr-namespace:NeoBeat_Net.Views.PlayListView"
+             x:Class="NeoBeat_Net.Pages.PostLog.Playlist.PlayListPage"
+             x:DataType="vm:PlayListPageViewModel"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*, Auto, *"
+              ColumnSpacing="15"
+              Margin="15,0">
+            <Image Grid.Column="0"
+                   Source="logolight.png"
+                   HeightRequest="75"
+                   WidthRequest="75"
+                   HorizontalOptions="Start"/>
+            <Label Grid.Column="1"
+                   Text="My Playlist"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   FontFamily="UbuntuBold"
+                   TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Border Grid.Column="2"
+                    HorizontalOptions="End"
+                    BackgroundColor="Transparent"
+                    Stroke="Transparent">
+                <Label Text="{mi:Material Add}"
+                       FontSize="38"
+                       VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+        </Grid>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                HeightRequest="6" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start" 
+                Stroke="Transparent"
+                StrokeShape="15"
+                Margin="15,0,15,0"/>
+        
+        <CollectionView Margin="15"
+                        ItemsSource="{Binding Listas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:PlayList">
+                    <plview:PlayListView ImagePlayList="{Binding PlayListImage}"
+                                         NamePlayList="{Binding Name}"
+                                         SizePlayList="{Binding Size}">
+                        <plview:PlayListView.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource 
+                                    AncestorType={x:Type vm:PlayListPageViewModel}}, 
+                                    Path=TapPlaylistCommand}"/>
+                        </plview:PlayListView.GestureRecognizers>
+                    </plview:PlayListView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

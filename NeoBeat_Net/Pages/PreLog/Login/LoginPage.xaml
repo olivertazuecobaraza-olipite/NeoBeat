@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PreLog.Login"  
+             xmlns:ur="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             x:DataType="vm:LoginPageViewModel"
+             x:Class="NeoBeat_Net.Pages.PreLog.Login.LoginPage"
+             Title=""
+             Shell.NavBarIsVisible="False">
+    
+    
+    <VerticalStackLayout Margin="30, 50, 30, 30" 
+                         Spacing="20">
+            
+            <Image Source="logolight.png"
+                   HeightRequest="125"
+                   WidthRequest="125"
+                   HorizontalOptions="Center"
+                   Margin="0, 25, 0, 40" />
+
+            <VerticalStackLayout Spacing="15">
+                <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSep}, Light={StaticResource LightSep}}" 
+                        HeightRequest="6" 
+                        WidthRequest="60" 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Start" 
+                        Stroke="Transparent"
+                        StrokeShape="15"
+                        Margin="0,0,0,0"/>
+                
+                <Label Text="Log In"
+                       FontSize="46"
+                       TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       Margin="0, 0, 0, 5" />
+            </VerticalStackLayout>
+        
+            <ur:TextField Title="Email" 
+                          Keyboard="Email"
+                          Text="{Binding Email}"/>
+            <ur:TextField Title="Password" 
+                          IsPassword="True"
+                          Text="{Binding Password}">
+                <ur:TextField.Attachments>
+                    <ur:TextFieldPasswordShowHideAttachment/>
+                </ur:TextField.Attachments>
+            </ur:TextField>
+            
+            <Button StyleClass="ElevatedButton" 
+                    Text="LogIn" 
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    FontFamily="UbuntuBold"
+                    TextColor="White"
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource DarkButton} , Light={StaticResource LightButton}}"
+                    Command="{Binding LoginCommand}"/>
+            
+            
+
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="10">
+                
+                <Label Grid.Column="0" 
+                       Text="Forgot Password?" 
+                       HorizontalOptions="Start">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+                <Label Grid.Column="1" 
+                       Text="Sign Up" 
+                       TextColor="Blue"
+                       HorizontalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoToRegisterPageCommand}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+            
+            <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                <Border BackgroundColor="Violet"
+                        StrokeShape="50" >
+                    <Label Text="google"
+                           FontSize="15"/>
+                </Border>
+                <Border BackgroundColor="Violet"
+                        StrokeShape="50">
+                    <Label Text="Guest"
+                           FontSize="15"
+                           Margin="15"/> 
+                </Border>
+            </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

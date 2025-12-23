@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NeoBeat_Net.Shell.PreLog.AppShellPre"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:log="clr-namespace:NeoBeat_Net.Pages.PreLog.Login"
+    xmlns:reg="clr-namespace:NeoBeat_Net.Pages.PreLog.Register"
+    Title="NeoBeat_Net"
+    FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate log:LoginPage}"
+        Route="LoginPage" />
+    
+    <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate reg:RegisterPage}"
+        Route="RegisterPage" />
+
+</Shell>

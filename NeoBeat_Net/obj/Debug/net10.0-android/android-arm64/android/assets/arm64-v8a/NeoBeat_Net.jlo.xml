@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc6488b7ae112137cc36" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="NeoBeat_Net.MainActivity, NeoBeat_Net">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc6488b7ae112137cc36" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="NeoBeat_Net.MainApplication, NeoBeat_Net" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="NeoBeat_Net" module-name="NeoBeat_Net.dll">
+    <type assembly-qualified-name="NeoBeat_Net.MainActivity, NeoBeat_Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="neobeat_net.MainActivity" java-key="crc6488b7ae112137cc36.MainActivity" managed-key="NeoBeat_Net.MainActivity" partial-assembly-qualified-name="NeoBeat_Net.MainActivity, NeoBeat_Net" />
+    <type assembly-qualified-name="NeoBeat_Net.MainApplication, NeoBeat_Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="neobeat_net.MainApplication" java-key="crc6488b7ae112137cc36.MainApplication" managed-key="NeoBeat_Net.MainApplication" partial-assembly-qualified-name="NeoBeat_Net.MainApplication, NeoBeat_Net" />
+  </acw-types>
+</api>

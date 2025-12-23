@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NeoBeat_Net.Shell.PostLog.AppShellPost"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:search="clr-namespace:NeoBeat_Net.Pages.PostLog.Search"
+    xmlns:profile="clr-namespace:NeoBeat_Net.Pages.PostLog.Profile"
+    xmlns:playlist="clr-namespace:NeoBeat_Net.Pages.PostLog.Playlist"
+    xmlns:settings="clr-namespace:NeoBeat_Net.Pages.PostLog.Settings"
+    xmlns:song="clr-namespace:NeoBeat_Net.Pages.PostLog.Songs"
+    xmlns:mi="http://www.aathifmahir.com/dotnet/2022/maui/icons"
+    Title="NeoBeat_Net"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="{AppThemeBinding Light={StaticResource LightBackGround}, Dark={StaticResource DarkBackGround}}">
+    
+    <TabBar>
+        <ShellContent
+            Icon="{mi:Material Search}"
+            Title="Search"
+            ContentTemplate="{DataTemplate search:SearchPage}"
+            Route="SearchPage" />
+        <ShellContent
+            Icon="{mi:Material LibraryMusic}"
+            Title="PlayList"
+            ContentTemplate="{DataTemplate playlist:PlayListPage}"
+            Route="PlayListPage" />
+        <ShellContent
+            Icon="{mi:Material AccountCircle}"
+            Title="Profile"
+            ContentTemplate="{DataTemplate profile:ProfilePage}"
+            Route="ProfilePage" />
+        <ShellContent
+            Icon="{mi:Material Settings}"
+            Title="Settings"
+            ContentTemplate="{DataTemplate settings:SettingsPage}"
+            Route="SettingsPage" />
+    </TabBar>
+    
+    <ShellContent
+        Title="songs"
+        ContentTemplate="{DataTemplate song:SongsPage}"
+        Route="SongsPage" />
+    
+    
+    
+</Shell>

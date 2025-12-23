@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Settings"
+             x:Class="NeoBeat_Net.Pages.PostLog.Settings.SettingsPage"
+             x:DataType="vm:SettingsPageViewModel">
+    <VerticalStackLayout Margin="30,15,30,30" 
+                         Spacing="20">
+        <Grid ColumnDefinitions="*, *">
+            <Border Grid.Column="0"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    StrokeShape="100"
+                    Margin="0,20,0,0">
+                <Image Source=".png"
+                       HorizontalOptions="Center"
+                       Margin="0, 25, 0, 40" />
+            </Border>
+            <VerticalStackLayout Grid.Column="1" 
+                                 Spacing="5"
+                                 Margin="0,20,0,0">
+                <Label Text="Nombre"
+                       FontSize="36"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"/>   
+                <Label Text="1234"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       FontFamily="UbuntuBold"
+                       TextColor="OrangeRed"/>
+            </VerticalStackLayout>
+        </Grid>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
+                HeightRequest="6" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start" 
+                Stroke="Transparent"
+                StrokeShape="15"/>
+        
+        <Label Text="General"
+               FontSize="20"
+               FontAttributes="Bold"
+               FontFamily="UbuntuBold"/>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark=Gray, Light=Azure}"
+                StrokeShape="10">
+            <Grid ColumnDefinitions="*, *" Padding="15">
+                <VerticalStackLayout Grid.Column="0" 
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="Center">
+                    <Label Text="Darkmode"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                           FontFamily="UbuntuBold"/>
+                </VerticalStackLayout>
+                <Border Grid.Column="1" 
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Stroke="Transparent">
+                    <Switch IsToggled="{Binding IsDarkTheme}"/> 
+                </Border>
+            </Grid> 
+        </Border>
+        
+        <Label Text="Account"
+               FontSize="20"
+               FontAttributes="Bold"
+               FontFamily="UbuntuBold"/>
+        
+        <Border BackgroundColor="{AppThemeBinding Dark=Gray, Light=Azure}"
+                StrokeShape="10">
+            <Grid ColumnDefinitions="*, *" Padding="15">
+                <VerticalStackLayout Grid.Column="0" 
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="Center">
+                    <Label Text="Mantener sesion"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                           FontFamily="UbuntuBold"/>
+                </VerticalStackLayout>
+                <Border Grid.Column="1" 
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Stroke="Transparent">
+                    <Switch IsToggled="{Binding}"/> 
+                </Border>
+            </Grid> 
+        </Border>
+        
+        <Button BackgroundColor="OrangeRed"
+                VerticalOptions="End"
+                Text="Cerrar"
+                TextColor="White"
+                FontSize="26"
+                FontAttributes="Bold"
+                FontFamily="UbuntuBold"
+                Command="{Binding CerrarCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
