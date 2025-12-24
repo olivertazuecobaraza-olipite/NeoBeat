@@ -5,6 +5,7 @@
              xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Songs"
              xmlns:songview="clr-namespace:NeoBeat_Net.Views.SongView"
              xmlns:model="clr-namespace:NeoBeat_Net.Models.Song"
+             xmlns:separator="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Pages.PostLog.Songs.SongsPage"
              x:DataType="vm:SongPageViewModel">
     <VerticalStackLayout>
@@ -26,13 +27,7 @@
                    VerticalOptions="Center"/>
         </Grid>
         
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
-                HeightRequest="6" 
-                HorizontalOptions="Fill" 
-                VerticalOptions="Start" 
-                Stroke="Transparent"
-                StrokeShape="15"
-                Margin="15,0,15,0"/>
+        <separator:SeparatorBig/>
         
         <CollectionView Margin="15"
                         ItemsSource="{Binding Playlist.Songs}">

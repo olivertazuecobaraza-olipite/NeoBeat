@@ -2,6 +2,7 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:separator="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Views.PlayListView.PlayListView">
     <StackLayout>
         <HorizontalStackLayout Spacing="15">
@@ -24,13 +25,7 @@
                        TextColor="DarkSlateGray"/>
             </VerticalStackLayout>
         </HorizontalStackLayout>
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
-                HeightRequest="4" 
-                WidthRequest="500"
-                HorizontalOptions="Center"
-                VerticalOptions="Center" 
-                Stroke="Transparent"
-                StrokeShape="15"
-                Margin="2,5"/>
+        
+        <separator:SeparatorSmall/>
     </StackLayout>
 </ContentView>

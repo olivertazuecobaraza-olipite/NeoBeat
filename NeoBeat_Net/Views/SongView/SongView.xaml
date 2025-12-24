@@ -2,7 +2,8 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NeoBeat_Net.Views.SongView.SongView">
+             x:Class="NeoBeat_Net.Views.SongView.SongView"
+             xmlns:separator="clr-namespace:NeoBeat_Net.Views.Separador">
     <StackLayout>
         <HorizontalStackLayout Spacing="15">
             <Border HorizontalOptions="Start"
@@ -24,13 +25,6 @@
                        TextColor="DarkSlateGray"/>
             </VerticalStackLayout>
         </HorizontalStackLayout>
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}" 
-                HeightRequest="2" 
-                WidthRequest="500"
-                HorizontalOptions="Center"
-                VerticalOptions="Center" 
-                Stroke="Transparent"
-                StrokeShape="15"
-                Margin="2,2"/>
+        <separator:SeparatorCancion/>
     </StackLayout>
 </ContentView>

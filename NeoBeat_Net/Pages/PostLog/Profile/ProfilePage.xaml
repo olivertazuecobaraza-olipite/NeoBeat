@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Profile"
              xmlns:sView="clr-namespace:NeoBeat_Net.Views.SongView"
-             xmlns:plview="clr-namespace:NeoBeat_Net.Views.PlayListView"
+             xmlns:separator="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Pages.PostLog.Profile.ProfilePage"
              x:DataType="vm:ProfilePageViewModel">
     <VerticalStackLayout Margin="30,15,30,30" 
@@ -41,12 +41,7 @@
             </VerticalStackLayout>
         </Grid>
             
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
-                HeightRequest="6" 
-                HorizontalOptions="Fill" 
-                VerticalOptions="Start" 
-                Stroke="Transparent"
-                StrokeShape="15"/>
+        <separator:SeparatorBig/>
             
         <VerticalStackLayout Spacing="10">
                 
@@ -66,12 +61,8 @@
             </sView:SongBigView>
         </VerticalStackLayout>
         
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
-                HeightRequest="6" 
-                HorizontalOptions="Fill" 
-                VerticalOptions="Start" 
-                Stroke="Transparent"
-                StrokeShape="15"/>
+        <separator:SeparatorBig/>
+        
         <VerticalStackLayout Spacing="10">
             <Label Text="PlayList" 
                    FontSize="24"

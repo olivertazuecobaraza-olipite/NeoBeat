@@ -3,6 +3,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:NeoBeat_Net.ViewModels.PostLog.Settings"
+             xmlns:separator="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Pages.PostLog.Settings.SettingsPage"
              x:DataType="vm:SettingsPageViewModel">
     <VerticalStackLayout Margin="30,15,30,30" 
@@ -32,12 +33,7 @@
             </VerticalStackLayout>
         </Grid>
         
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
-                HeightRequest="6" 
-                HorizontalOptions="Fill" 
-                VerticalOptions="Start" 
-                Stroke="Transparent"
-                StrokeShape="15"/>
+        <separator:SeparatorBig/>
         
         <Label Text="General"
                FontSize="20"

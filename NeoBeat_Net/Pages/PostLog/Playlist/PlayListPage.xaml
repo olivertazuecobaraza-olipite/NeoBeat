@@ -6,6 +6,7 @@
              xmlns:mi="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
              xmlns:model="clr-namespace:NeoBeat_Net.Models.PlayList"
              xmlns:plview="clr-namespace:NeoBeat_Net.Views.PlayListView"
+             xmlns:sepview="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Pages.PostLog.Playlist.PlayListPage"
              x:DataType="vm:PlayListPageViewModel"
              Shell.NavBarIsVisible="False">
@@ -40,13 +41,7 @@
             </Border>
         </Grid>
         
-        <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
-                HeightRequest="6" 
-                HorizontalOptions="Fill" 
-                VerticalOptions="Start" 
-                Stroke="Transparent"
-                StrokeShape="15"
-                Margin="15,0,15,0"/>
+        <sepview:SeparatorBig/>
         
         <CollectionView Margin="15"
                         ItemsSource="{Binding Listas}">
