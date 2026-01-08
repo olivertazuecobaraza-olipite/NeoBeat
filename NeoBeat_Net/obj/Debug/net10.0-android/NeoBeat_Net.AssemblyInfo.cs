@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeoBeat_Net")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5677050ed203f8cf6a8e6374637dc1273afd540d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fc4629a9a1485de7a8139fccce1c27e9ce34018f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeoBeat_Net")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeoBeat_Net")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

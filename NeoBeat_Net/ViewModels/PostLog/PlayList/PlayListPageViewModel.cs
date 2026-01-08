@@ -29,6 +29,11 @@ public partial class PlayListPageViewModel : ObservableObject
     {
         await Shell.Current.GoToAsync(nameof(SongsPage));
     }
-    
+
+    [RelayCommand]
+    private void DeletePlayList(PlayList playList)
+    {
+        if (Listas.Contains(playList)) Listas.Remove(playList);
+    }
     #endregion
 }

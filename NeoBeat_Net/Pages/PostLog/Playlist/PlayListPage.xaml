@@ -6,7 +6,6 @@
              xmlns:mi="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
              xmlns:model="clr-namespace:NeoBeat_Net.Models.PlayList"
              xmlns:plview="clr-namespace:NeoBeat_Net.Views.PlayListView"
-             xmlns:sepview="clr-namespace:NeoBeat_Net.Views.Separador"
              x:Class="NeoBeat_Net.Pages.PostLog.Playlist.PlayListPage"
              x:DataType="vm:PlayListPageViewModel"
              Shell.NavBarIsVisible="False">
@@ -47,15 +46,28 @@
                         ItemsSource="{Binding Listas}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:PlayList">
-                    <plview:PlayListView ImagePlayList="{Binding PlayListImage}"
-                                         NamePlayList="{Binding Name}"
-                                         SizePlayList="{Binding Size}">
-                        <plview:PlayListView.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource 
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Reveal">
+                                <SwipeItem
+                                    Text="Eliminar"
+                                    IconImageSource="delete.png"
+                                    BackgroundColor="#ff1800"
+                                    Command="{Binding BindingContext.DeletePlayListCommand,
+                                        Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                    CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <plview:PlayListView ImagePlayList="{Binding PlayListImage}"
+                                             NamePlayList="{Binding Name}"
+                                             SizePlayList="{Binding Size}">
+                            <plview:PlayListView.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource 
                                     AncestorType={x:Type vm:PlayListPageViewModel}}, 
                                     Path=TapPlaylistCommand}"/>
-                        </plview:PlayListView.GestureRecognizers>
-                    </plview:PlayListView>
+                            </plview:PlayListView.GestureRecognizers>
+                        </plview:PlayListView>
+                    </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

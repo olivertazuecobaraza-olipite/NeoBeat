@@ -5,9 +5,7 @@
              x:Class="NeoBeat_Net.Views.Separador.SeparatorSmall">
     <Border BackgroundColor="{AppThemeBinding Dark={StaticResource DarkSeparadorSecundario}, Light={StaticResource LightSeparadorSecundaio}}"
             HeightRequest="4" 
-            WidthRequest="500"
-            HorizontalOptions="Center"
-            VerticalOptions="Center" 
+            HorizontalOptions="Fill"
             Stroke="Transparent"
             StrokeShape="15"
             Margin="2,5"/>

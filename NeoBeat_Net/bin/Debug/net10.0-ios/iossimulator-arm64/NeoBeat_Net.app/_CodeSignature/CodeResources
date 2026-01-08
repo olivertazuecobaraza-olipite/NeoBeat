@@ -174,11 +174,11 @@
 		</data>
 		<key>NeoBeat_Net.dll</key>
 		<data>
-		OccVW0usPPo9etGhL5qjpH969zo=
+		CgHv3SfD0fHUsa51P62reKPpd6g=
 		</data>
 		<key>NeoBeat_Net.pdb</key>
 		<data>
-		3uQzB7SHoRccAuiPIEEPlizwbxY=
+		MEPCvBpws0rM0Mv5i1uE2YDCvv8=
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
@@ -916,6 +916,10 @@
 		<data>
 		XqUHqQO5wvn4rfcsaay7OZUDaSg=
 		</data>
+		<key>delete.png</key>
+		<data>
+		Q8LL0Vmg8+22DPe+wzkN33noOtE=
+		</data>
 		<key>el/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
 		TQkpk5G4LYxzSVFM6xq1rpHhq6A=
@@ -1406,14 +1410,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fTMy5+6ejtfshzkOTrXVXhxQOVtqvUGbox4swFdHX70=
+			bvLuPZFKyYBmMmFEhgYEKOFPxAzKPLMiOrjh3q+/euo=
 			</data>
 		</dict>
 		<key>NeoBeat_Net.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hiOk3GVMZLbUmURQsiiO0BWXUnSiuetwA257cSZrNqY=
+			ShHZS4rsXbsBPVr7RVXUyyCYPECKuAPWPAP5JjyWVXI=
 			</data>
 		</dict>
 		<key>Newtonsoft.Json.dll</key>
@@ -2695,6 +2699,13 @@
 			<key>hash2</key>
 			<data>
 			cHNBGvJ/8QwVOgUph6BHS+bhHG4zaIaG0IfHJbXIUhQ=
+			</data>
+		</dict>
+		<key>delete.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			csH7TZk7yk1iP4wEkaSCi3q8DF1zZdVoNDBwG5dOPZg=
 			</data>
 		</dict>
 		<key>el/Microsoft.Maui.Controls.resources.dll</key>

@@ -23,10 +23,10 @@ public partial class SongPageViewModel : ObservableObject
         Playlist = new PlayList("nombre playlist"); // tiene que pasarse como parametro
         
         // datos de prueba
-        Playlist.AddSong(new Song("cancion 1", 123));
-        Playlist.AddSong(new Song("cancion 1",321));
         Playlist.AddSong(new Song("cancion 1",123));
-        Playlist.AddSong(new Song("cancion 1",123));
+        Playlist.AddSong(new Song("cancion 2",321));
+        Playlist.AddSong(new Song("cancion 3",123));
+        Playlist.AddSong(new Song("cancion 4",123));
     }
 
     #endregion
