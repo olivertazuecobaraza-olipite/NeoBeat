@@ -15,7 +15,7 @@
               ColumnSpacing="15"
               Margin="15,0">
             <Image Grid.Column="0"
-                   Source="logolight.png"
+                   Source="ic_logo_app_transparent.png"
                    HeightRequest="75"
                    WidthRequest="75"
                    HorizontalOptions="Start"/>
@@ -24,7 +24,9 @@
                    FontSize="26"
                    FontAttributes="Bold"
                    FontFamily="UbuntuBold"
-                   TextColor="{AppThemeBinding Dark={StaticResource DarkText}, Light={StaticResource LightText}}"
+                   TextColor="{AppThemeBinding 
+                        Dark={StaticResource DarkText}, 
+                        Light={StaticResource LightText}}"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Border Grid.Column="2"
@@ -40,8 +42,6 @@
                 </Label>
             </Border>
         </Grid>
-        
-        <sepview:SeparatorBig/>
         
         <CollectionView Margin="15"
                         ItemsSource="{Binding Listas}">

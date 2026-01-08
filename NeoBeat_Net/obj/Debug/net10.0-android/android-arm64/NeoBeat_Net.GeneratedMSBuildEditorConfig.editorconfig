@@ -81,6 +81,16 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Pages/PostLog/Songs/SongsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Pages.PostLog.Songs.SongsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/PostLog/Songs/SongsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/PostLog/Songs/SongsPage.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
 [/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Pages/PreLog/Login/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Pages.PreLog.Login.LoginPage.xaml
@@ -136,6 +146,76 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Shell.PreLog.AppShellPre.xaml
 build_metadata.AdditionalFiles.TargetPath = Shell/PreLog/AppShellPre.xaml
 build_metadata.AdditionalFiles.RelativePath = Shell/PreLog/AppShellPre.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/PlayListView/PlayListBigView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.PlayListView.PlayListBigView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PlayListView/PlayListBigView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PlayListView/PlayListBigView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/PlayListView/PlayListView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.PlayListView.PlayListView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PlayListView/PlayListView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PlayListView/PlayListView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/Separador/SeparatorBig.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.Separador.SeparatorBig.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Separador/SeparatorBig.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Separador/SeparatorBig.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/Separador/SeparatorCancion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.Separador.SeparatorCancion.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Separador/SeparatorCancion.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Separador/SeparatorCancion.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/Separador/SeparatorSmall.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.Separador.SeparatorSmall.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Separador/SeparatorSmall.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Separador/SeparatorSmall.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/SongView/SongBigView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.SongView.SongBigView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SongView/SongBigView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SongView/SongBigView.xaml
+build_metadata.AdditionalFiles.Inflator = Runtime
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[/Users/olipie/Documents/DAM2/DI/NeoBeat_Net/NeoBeat_Net/Views/SongView/SongView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NeoBeat_Net.Views.SongView.SongView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SongView/SongView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SongView/SongView.xaml
 build_metadata.AdditionalFiles.Inflator = Runtime
 build_metadata.AdditionalFiles.NoWarn = 
 build_metadata.AdditionalFiles.EnableDiagnostics = 

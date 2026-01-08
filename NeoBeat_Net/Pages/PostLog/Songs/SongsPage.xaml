@@ -13,7 +13,7 @@
               ColumnSpacing="15"
               Margin="15,0">
             <Image Grid.Column="0"
-                   Source="logolight.png"
+                   Source="ic_logo_app_transparent.png"
                    HeightRequest="75"
                    WidthRequest="75"
                    HorizontalOptions="Start"/>
@@ -26,8 +26,6 @@
                    HorizontalOptions="Start"
                    VerticalOptions="Center"/>
         </Grid>
-        
-        <separator:SeparatorBig/>
         
         <CollectionView Margin="15"
                         ItemsSource="{Binding Playlist.Songs}">

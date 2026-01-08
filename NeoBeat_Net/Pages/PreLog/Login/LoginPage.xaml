@@ -7,13 +7,36 @@
              x:DataType="vm:LoginPageViewModel"
              x:Class="NeoBeat_Net.Pages.PreLog.Login.LoginPage"
              Title=""
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             >
     
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="estiloActivity" TargetType="ActivityIndicator">
+                
+                <Setter Property="IsVisible" Value="{Binding IsLoading}"/>
+                <Setter Property="IsEnabled" Value="{Binding IsLoading}"/>
+                <Setter Property="IsRunning" Value="{Binding IsLoading}"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding 
+                        Dark={StaticResource DarkBackGround}, 
+                        Light={StaticResource LightBackGround}}"/>
+                <Setter Property="MaximumHeightRequest" Value="60"/>
+                <Setter Property="MaximumWidthRequest" Value="60"/>
+                <Setter Property="Color" Value="{AppThemeBinding 
+                        Dark={StaticResource  DarkRueda}, 
+                        Light={StaticResource lightRueda}}"/>
+                <Setter Property="ZIndex" Value="15"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
     <VerticalStackLayout Margin="30, 50, 30, 30" 
                          Spacing="20">
-            
-            <Image Source="logolight.png"
+        
+        <ActivityIndicator Style="{StaticResource estiloActivity}"/>
+            <Image Source="ic_logo_app_transparent.png"
                    HeightRequest="125"
                    WidthRequest="125"
                    HorizontalOptions="Center"
@@ -92,5 +115,7 @@
                            Margin="15"/> 
                 </Border>
             </HorizontalStackLayout>
+            
+            
     </VerticalStackLayout>
 </ContentPage>

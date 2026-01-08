@@ -14,7 +14,8 @@ public partial class LoginPageViewModel(FireBaseAuth fba) : ObservableObject
 
     [ObservableProperty] private string _email = "oliver.tazueco.baraza@iestubalcain.net";
     [ObservableProperty] private string _password = "Oliver";
-
+    [ObservableProperty] private bool _isLoading = false;
+    
     #endregion
     
     #region Commands
@@ -24,16 +25,29 @@ public partial class LoginPageViewModel(FireBaseAuth fba) : ObservableObject
     [RelayCommand]
     private async Task Login()
     {
-        if (await fba.LoginAsync(Email, Password))
+        try
         {
-            var newShell = new AppShellPost();
-            Application.Current!.Windows[0].Page = newShell;
+            IsLoading = true;
+            //await Task.Delay(2000);
+            if (await fba.LoginAsync(Email, Password))
+            {
+                var newShell = new AppShellPost();
+                Application.Current!.Windows[0].Page = newShell;
+            }
+            else
+            {
+                var toast = Toast.Make("Error al iniciar", ToastDuration.Long);
+                await toast.Show();
+            }
         }
-        else
+        catch (Exception e)
         {
-            var toast = Toast.Make("Error al iniciar", ToastDuration.Long);
-            await toast.Show();
         }
+        finally
+        {
+            IsLoading = false;
+        }
+        
     }
     
     #endregion

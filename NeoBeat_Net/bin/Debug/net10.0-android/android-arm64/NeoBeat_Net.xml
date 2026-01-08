@@ -6,9 +6,16 @@
     <members>
         <member name="T:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel">
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel.Listas">
             <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel._listas"/>
+        </member>
+        <member name="F:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel.tapPlaylistCommand">
+            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel.TapPlaylistCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel.TapPlaylistCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.PlayList.PlayListPageViewModel.TapPlaylist"/>.</summary>
         </member>
         <member name="T:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel">
             <inheritdoc/>
@@ -20,11 +27,61 @@
         <member name="P:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.PlayList">
             <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel._playList"/>
         </member>
-        <member name="F:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.cerrarCommand">
-            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.CerrarCommand"/>.</summary>
+        <member name="F:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.tapPlaylistCommand">
+            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.TapPlaylistCommand"/>.</summary>
         </member>
-        <member name="P:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.CerrarCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.Cerrar"/>.</summary>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.TapPlaylistCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.Profile.ProfilePageViewModel.TapPlaylist"/>.</summary>
+        </member>
+        <member name="T:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.Pl">
+            <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel._pl"/>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.Recommended">
+            <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel._recommended"/>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.Genres">
+            <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel._genres"/>
+        </member>
+        <member name="F:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.tapPlaylistCommand">
+            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.TapPlaylistCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.TapPlaylistCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.Search.SearchPageViewModel.TapPlaylist"/>.</summary>
+        </member>
+        <member name="T:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.IsDarkTheme">
+            <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel._isDarkTheme"/>
+        </member>
+        <member name="M:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.OnIsDarkThemeChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.IsDarkTheme"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.IsDarkTheme"/> is changed.</remarks>
+        </member>
+        <member name="F:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.cerrarCommand">
+            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.CerrarCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.CerrarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.Settings.SettingsPageViewModel.Cerrar"/>.</summary>
+        </member>
+        <member name="T:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel.Playlist">
+            <inheritdoc cref="F:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel._playlist"/>
+        </member>
+        <member name="F:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel.tapSongCommand">
+            <summary>The backing field for <see cref="P:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel.TapSongCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel.TapSongCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:NeoBeat_Net.ViewModels.PostLog.Songs.SongPageViewModel.TapSong"/>.</summary>
         </member>
         <member name="T:NeoBeat_Net.ViewModels.PreLog.Login.LoginPageViewModel">
             <inheritdoc/>
@@ -216,6 +273,21 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PlayList">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PlayList" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Pl">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Pl" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Recommended">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Recommended" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Genres">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Genres" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsDarkTheme">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsDarkTheme" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Playlist">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Playlist" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
         </member>
@@ -239,6 +311,21 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PlayList">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PlayList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Pl">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Pl" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Recommended">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Recommended" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Genres">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Genres" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsDarkTheme">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsDarkTheme" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Playlist">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Playlist" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>

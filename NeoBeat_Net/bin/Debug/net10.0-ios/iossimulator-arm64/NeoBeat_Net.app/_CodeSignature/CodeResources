@@ -174,11 +174,11 @@
 		</data>
 		<key>NeoBeat_Net.dll</key>
 		<data>
-		W2QIRz0APZDeZdsP6Wc9X8kz08I=
+		OccVW0usPPo9etGhL5qjpH969zo=
 		</data>
 		<key>NeoBeat_Net.pdb</key>
 		<data>
-		C67JwN0qtMWFq0YtiqToAU6SO3k=
+		3uQzB7SHoRccAuiPIEEPlizwbxY=
 		</data>
 		<key>Newtonsoft.Json.dll</key>
 		<data>
@@ -948,6 +948,10 @@
 		<data>
 		GdYYcfeX2Ju4zLD88ZeEV9HGST8=
 		</data>
+		<key>ic_logo_app_transparent.png</key>
+		<data>
+		DHvblYDuPPkZgZ6bvrmib+gBmls=
+		</data>
 		<key>id/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
 		4wUSd34wGBQiEn+CbHM3k5JtlWY=
@@ -1010,7 +1014,7 @@
 		</data>
 		<key>logolight.png</key>
 		<data>
-		XnZQuEfthUzDDBJSJUMWm7a7QaA=
+		IIyWhvK4/2dQyd/dkNHxC2HAtHU=
 		</data>
 		<key>ms/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
@@ -1402,14 +1406,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EitIHvbjT0CMrDjyaoJ7OBTHdL0Ou6z3J1ndwTpU91M=
+			fTMy5+6ejtfshzkOTrXVXhxQOVtqvUGbox4swFdHX70=
 			</data>
 		</dict>
 		<key>NeoBeat_Net.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UM7nmEpIGUmKzFmp0zi5hFi1X09uVYWTsHOEgZT1uQc=
+			hiOk3GVMZLbUmURQsiiO0BWXUnSiuetwA257cSZrNqY=
 			</data>
 		</dict>
 		<key>Newtonsoft.Json.dll</key>
@@ -2749,6 +2753,13 @@
 			vhiMRPzyXma0efDeBwNKqcAPMtVC5jkzFezgU/TTZF4=
 			</data>
 		</dict>
+		<key>ic_logo_app_transparent.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X0xzsG7ahURPgRS48csAILqH/8VVsOFbpGzTOiPKIZk=
+			</data>
+		</dict>
 		<key>id/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -2858,7 +2869,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q1Wr5mayRABlR5AIm7/XRkEhY5icCF9FhBbyzsSJllo=
+			bpNRCp62es5mKvjreF5YeBalX7W0cYExx1+8vRCdUlQ=
 			</data>
 		</dict>
 		<key>ms/Microsoft.Maui.Controls.resources.dll</key>

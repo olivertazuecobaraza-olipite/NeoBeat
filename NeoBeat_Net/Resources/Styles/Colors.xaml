@@ -67,6 +67,9 @@
     <Color x:Key="LightSeparadorSecundaio">Black</Color>
     <Color x:Key="DarkSeparadorSecundario">White</Color>
     
+    <!-- Incicator rueda -->
+    <Color x:Key="lightRueda">#495057</Color>
+    <Color x:Key="DarkRueda">#ced4da</Color>
     
     
     
