@@ -21,8 +21,8 @@ public class FireBaseAuth : IFireBaseAuth
     
     public FirebaseAuthClient Instance { get; } = new FirebaseAuthClient(new FirebaseAuthConfig
     {
-        ApiKey = "AIzaSyDTlcb264JfxCFVweNkSJZCoFSbxHPey4I",
-        AuthDomain = "neobeat-3d798.firebaseapp.com",
+        ApiKey = "",
+        AuthDomain = "",
         Providers =
         [
             new EmailProvider()
